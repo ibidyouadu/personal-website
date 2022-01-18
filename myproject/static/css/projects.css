@@ -1,0 +1,9 @@
+.album {
+  --bs-bg-opacity: 1;
+  background-color: #425664
+}
+
+.img-thumbnail:hover {
+  transition: transform .5s ease;
+  transform: scale(1.1);
+}

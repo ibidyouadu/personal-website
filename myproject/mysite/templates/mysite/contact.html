@@ -1,0 +1,34 @@
+{% load static %}
+
+<div class="container text-center py-5" style="max-width: 600px">
+  <h1 class="display-5 fw-bold">CONTACT</h1>
+  <p class="lead">I am currently open to freelance opportunities. Interested in working with me? Shoot me an email:</p>
+  <div class="contact-form">
+    <form action="{% url 'home' %}" method="post">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col-lg-6">
+          <input type="text" name="contact-name" class="form-control mb-3" placeholder="Name">
+        </div>
+        <div class="col-lg-6">
+          <input type="text" name="contact-email" class="form-control mb-3" placeholder="Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <input type="text" name="contact-subject" class="form-control mb-3" placeholder="Subject">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <textarea type="text" name="contact-body" class="form-control mb-5" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

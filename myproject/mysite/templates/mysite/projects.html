@@ -1,0 +1,68 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css'%}">
+</head>
+
+<main>
+<section class="py-5 text-center container">
+      <h1 class="display-5 fw-bold">PROJECTS</h1>
+</section>
+
+<div class="album border-top border-bottom border-dark py-5">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col d-flex align-items-stretch">
+        <div class="card shadow-sm">
+          <img class="img-fluid img-thumbnail" src="{% static 'images/project1.png' %}">
+          <div class="card-body">
+            <h5 class="card-title">Tweet Classifier</h5>
+            <p class="card-text text-muted">Research for natural disaster assessment using social media data.</p>
+            <p class="card-text text-muted">Modified an existing text classifier to label tweets as related to power infrastructure or not, while providing insights on relevant keywords.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-sm btn-outline-secondary" target="blank_" href="https://github.com/ibidyouadu/tweet_classification">GitHub</a>
+              <a class="btn btn-sm btn-outline-secondary" target="blank_" href="https://drive.google.com/file/d/11feSSe7GBEZC9QxUIvoni0mQxo2NfxdP/view">Documentation</a>
+            </div>
+            <div class="text-muted" style="font-size:x-small">Python, pandas, TensorFlow, NLP</div>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex align-items-stretch">
+        <div class="card shadow-sm">
+          <img class="img-fluid img-thumbnail" src="{% static 'images/project2.png' %}">
+          <div class="card-body">
+            <h5 class="card-title">OurFish Outliers</h5>
+            <p class="card-text text-muted">Data tool using statistical methods to flag potential outliers in Rare's OurFish dataset. Data is scanned daily and an email is sent if any samples are flagged.</p>
+            <p class="card-text text-muted">Succeeded in identifying a sample with a typo that inflated a KPI by over 200%.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-sm btn-outline-secondary" target="blank_" href="https://github.com/ibidyouadu/ourfish-outliers">GitHub</a>
+              <a class="btn btn-sm btn-outline-secondary" target="blank_" href="https://drive.google.com/file/d/19KbOKcA_5iAylBEVnjf5zRJxrob9MYYC/view">Documentation</a>
+            </div>
+            <div class="text-muted" style="font-size:x-small">Python, Postgres, Anomaly Detection</div>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex align-items-stretch">
+        <div class="card shadow-sm">
+          <img class="img-fluid img-thumbnail" src="{% static 'images/project3.png' %}">
+          <div class="card-body">
+            <h5 class="card-title">Fish Forever Dashboards</h5>
+            <p class="card-text text-muted">Took over maintenance of two dashboards from a contracted developer and wrote a new one from scratch.</p>
+            <p class="card-text text-muted">The dashboards are used by internal teams and government bodies to monitor and evaluate ecological and socioeconomic conditions within partner fisheries.</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-sm btn-outline-secondary" target="blank_" href="https://portal.rare.org/data/ecological-data">Try me</a>
+            </div>
+            <div class="text-muted" style="font-size:x-small">R, shiny, tidyverse, Data Visualization</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
