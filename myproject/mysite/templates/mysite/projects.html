@@ -4,11 +4,11 @@
 </head>
 
 <main>
-<section class="py-5 text-center container">
+<section class="text-center container">
       <h1 class="display-5 fw-bold">PROJECTS</h1>
 </section>
 
-<div class="album border-top border-bottom border-dark py-5">
+<div class="album my-5">
   <div class="container">
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -51,12 +51,28 @@
           <img class="img-fluid img-thumbnail" src="{% static 'images/project3.png' %}">
           <div class="card-body">
             <h5 class="card-title">Fish Forever Dashboards</h5>
-            <p class="card-text text-muted">Took over maintenance of two dashboards from a contracted developer and wrote a new one from scratch.</p>
-            <p class="card-text text-muted">The dashboards are used by internal teams and government bodies to monitor and evaluate ecological and socioeconomic conditions within partner fisheries.</p>
+            <p class="card-text text-muted">These dashboards are used by Rare Fish Forever's internal teams and government bodies to monitor and evaluate ecological and socioeconomic conditions within partner fisheries.</p>
           </div>
           <div class="card-footer d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <a class="btn btn-sm btn-outline-secondary" target="blank_" href="https://portal.rare.org/data/ecological-data">Try me</a>
+              <div class="btn-group">
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Github</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" target="blank_" href="https://github.com/Rare-Technology/ECO_Dashboard">Ecological Dashboard</a></li>
+                  <li><a class="dropdown-item" target="blank_" href="https://github.com/Rare-Technology/FMA_Dashboard">Fisheries Management Assessment Tool</a></li>
+                  <li><a class="dropdown-item" target="blank_" href="https://github.com/Rare-Technology/HHS_Dashboard">Household Surveys Dashboard</a></li>
+                  <li><a class="dropdown-item" target="blank_" href="https://github.com/Rare-Technology/Fisheries-Dashboard">Fisheries Dashboard</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Try me!</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" target="blank_" href="https://portal.rare.org/data/ecological-data">Ecological Dashboard</a></li>
+                  <li><a class="dropdown-item" target="blank_" href="https://portal.rare.org/en/tools-and-data/fma/">Fisheries Management Assessment Tool</a></li>
+                  <li><a class="dropdown-item" target="blank_" href="https://portal.rare.org/en/tools-and-data/household-survey-data/">Household Surveys Dashboard</a></li>
+                  <li><a class="dropdown-item" target="blank_" href="https://portal.rare.org/en/tools-and-data/fisheries-data/">Fisheries Dashboard</a></li>
+                </ul>
+              </div>
             </div>
             <div class="text-muted" style="font-size:x-small">R, shiny, tidyverse, Data Visualization</div>
           </div>
