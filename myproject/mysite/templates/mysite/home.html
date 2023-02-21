@@ -1,8 +1,8 @@
 {% extends "mysite/base.html" %}
 {% block content %}
-  {% if contact_name %}
+  {% if submitted_email %}
   <div class="alert alert-success d-flex col-4 mx-auto text-center" role="alert">
-    Thanks for your message, {{contact_name}}! I'll get back to you soon.
+    Thanks for your message! I'll get back to you soon.
   </div>
   {% endif %}
   {% include 'mysite/hero.html' %}

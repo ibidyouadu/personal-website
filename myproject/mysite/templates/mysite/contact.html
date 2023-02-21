@@ -2,19 +2,15 @@
 
 <div class="container text-center py-5" style="max-width: 600px">
   <h1 class="display-5 fw-bold">CONTACT</h1>
-  <p class="lead">I am currently open to freelance opportunities. Interested in working with me? Shoot me an email:</p>
+  <p class="lead">I am currently open to contracting/freelance opportunities. Interested in working with me? Shoot me an email:</p>
   <div class="contact-form">
     <form action="{% url 'home' %}" method="post">
       {% csrf_token %}
       <div class="row">
+        <input type="text" name="contact-name" class="form-control mb-3" style="display:none !important" tabindex="-1">
         <div class="col-lg-6">
-          <input type="text" name="contact-name" class="form-control mb-3" placeholder="Name">
+          <input type="text" name="contact-email" class="form-control mb-3" placeholder="Your email address">
         </div>
-        <div class="col-lg-6">
-          <input type="text" name="contact-email" class="form-control mb-3" placeholder="Email">
-        </div>
-      </div>
-      <div class="row">
         <div class="col-lg-6">
           <input type="text" name="contact-subject" class="form-control mb-3" placeholder="Subject">
         </div>
